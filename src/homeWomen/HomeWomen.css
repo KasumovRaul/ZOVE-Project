@@ -1,0 +1,40 @@
+section{
+    margin: 3em;
+}
+
+.homeWomen-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.homeWomen-img img{
+    width: 100%;
+    height: auto;
+}
+
+.HomeWomen-viewbtn button{
+    outline: none;
+    border: none;
+    padding: 8px 28px;
+    border: 1px solid ;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.HomeWomen-viewbtn button:hover{
+    background: var(--color-bl);
+    color: var(--color-wh);
+    border: 0.1px solid;
+}
+
+@media(max-width:600px){
+    .HomeBoy-viewbtn button{
+        padding: 4px 20px;
+        font-size: small;
+    }
+}

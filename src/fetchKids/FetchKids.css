@@ -1,0 +1,24 @@
+.kidsitem-container{
+    margin-top: 5em;
+}
+
+.kidsitem-content{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.product__title h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product__price {
+    margin-top: 2px;
+}
+
+.product__price strong{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

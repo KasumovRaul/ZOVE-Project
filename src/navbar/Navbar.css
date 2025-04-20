@@ -1,0 +1,154 @@
+
+.header{
+    background-color: var(--color-gr);
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.header-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo h1{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--color-wh);
+    letter-spacing: 5px;
+    font-family: 'Big Shoulders Inline', sans-serif;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%;
+}
+
+.btn-menu {
+    align-items: center;
+    margin-top: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--color-wh);
+    display: none;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+}
+
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu li{
+    cursor: pointer;
+    font-weight: 300;
+    margin-left: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    color: var(--color-wh);
+}
+
+.main-menu li:hover{
+    color: #f0a500;
+}
+
+.res-bag{
+    display: none;
+    font-size: larger;
+}
+
+.res-count{
+    position: absolute;
+    font-size: small;
+    right: 5.9%;
+    top: 40%;
+}
+
+@media (max-width: 768px){
+    .btn-menu {
+        display: block;
+    }
+
+    .header-logo{
+        margin-right: 1.2em;
+    }
+
+    .header-main {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-gr);
+        overflow: hidden;
+        border-top: 1px solid #ddd;
+        max-height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .header-nav.active .header-main {
+        max-height: 300px;
+        visibility: visible;
+        opacity: 1;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .main-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .btn-menu b{
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .res-cl{
+        display: none;
+    }
+
+    .res-bag{
+        display: block;
+        color: var(--color-wh);
+    }    
+}
+
+@media (max-width: 415px){
+    .res-count{
+        position: absolute;
+        font-size: small;
+        right: 6.5%;
+        top: 40%;
+    }
+}
+
+@media (max-width: 395px){
+    .res-count{
+        position: absolute;
+        font-size: 12px;
+        right: 6.6%;
+        top: 41.5%;
+    }
+    
+}

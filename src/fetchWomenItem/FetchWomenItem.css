@@ -1,0 +1,122 @@
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.menitem-container{
+    margin-top: 5em;
+}
+
+.header__std{
+    margin-top: 3em;
+}
+
+.menitem-content{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header__bar{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.bar__section{
+    cursor: pointer;
+    color: #111;
+    position: relative;
+}
+
+.bar__section::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #111;
+    width: 0;
+    transition: width 0.3s ease;
+    margin-top: 4px;
+}
+
+.bar__section:hover:after{
+    width: 100%;
+}
+
+.input-box{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box input[type="search"]{
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-bottom: 1px solid #111;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    text-align: center;
+}
+
+.product__head h1 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+
+  .product__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 0 40px 60px;
+}
+.product__list__info {
+    flex: 1 1 280px;
+    max-width: 280px;
+    position: relative;
+}
+
+  
+.product__list__info:hover {
+    transform: scale(1.02);
+    border: 1px solid #ddd;
+  }
+
+.product__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+.product__title h5 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+  }
+  
+.product__price strong {
+    font-size: 14px;
+    font-weight: 400;
+    color: #111;
+  }
+
+.product-info{
+    padding-top: 15px;
+    position: relative;
+}
+
