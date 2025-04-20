@@ -16,6 +16,7 @@ import ProductDetails from './productDetail/ProductDetails';
 import { BagProvider } from './BAGContext';
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css'; 
+import GoogleAnalytics from './googleAnlyatics/GoogleAnlyatics';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='/fetchMen' element={<FetchMenItem/>}/>
         <Route path='/fetchKids' element={<FetchKids/>}/>
         <Route path='/details/:id' element={<ProductDetails/>}/>
+        <GoogleAnalytics/>
       </Routes>
       <Footer/>
      </Router>
