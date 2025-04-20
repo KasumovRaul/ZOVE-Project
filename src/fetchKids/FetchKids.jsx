@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useProductContext } from '../ContextAPI'
 import { Link } from 'react-router-dom';
 import Spinner from '../spinner/Spinner';
-import './fetchKids.css'
+import './FetchKids.css'
 const FetchKids = () => {
 
     const {kidsShoes, loading} = useProductContext();
