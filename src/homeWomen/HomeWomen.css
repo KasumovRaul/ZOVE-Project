@@ -24,6 +24,7 @@ section{
     text-transform: uppercase;
     transition: background 0.2s ease-in-out;
     font-weight: 500;
+    color: var(--color-bl);
 }
 
 .HomeWomen-viewbtn button:hover{

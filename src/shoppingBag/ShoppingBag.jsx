@@ -126,7 +126,7 @@ const ShoppingBag = () => {
           <input type="text" placeholder="CVV" />
         </div>
 
-        <button className="pay-btn">{calculateTotal()} Pay </button>
+        <button className="pay-btn">{(calculateTotal() * 1.18).toFixed(3)} Pay </button>
       </form>
     </div>
          </div>
